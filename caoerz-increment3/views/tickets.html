@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helen Zhang">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse Tickets</title>
+
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body onload="addYear()">
+    <header>
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a id="navselected" href="tickets.html">Buy Tickets</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h2>Tickets</h2>
+
+        <table>
+            <tr>
+                <th>Ticket Type</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Adult</td>
+                <td>General admission for ages 18 and over. Visitors under 18 receive free admission.</td>
+                <td>$18</td>
+            </tr>
+            <tr>
+                <td>Student</td>
+                <td>Valid student ID required.</td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>Member</td>
+                <td>Valid member ID required.</td>
+                <td>$15</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p id="copyYear"></p>
+    </footer>
+</body>
+</html>
