@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helen Zhang">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse Exhibitions</title>
+
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        </header>
+
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+
+        <main class="main">
+            <h2>Current Exhibitions</h2>
+
+            <div class="info_card">
+                <h3>Digital Dreams</h3>
+                <p>
+                    This exhibition explores how artists are using algorithms,
+                    artificial intelligence, and generative tools to create new forms of
+                    digital expression.
+                </p>
+            </div>
+
+            <div class="info_card">
+                <h3>Code &amp; Canvas</h3>
+                <p>
+                    Code &amp; Canvas highlights the ways programming has become a medium for
+                    artistic creation.
+                </p>
+            </div>
+
+            <div class="info_card">
+                <h3>Light / Memory</h3>
+                <p>
+                    An immersive installation exploring projection, movement, and memory through responsive visual environments.
+                </p>
+            </div>
+        </main>
+
+        <figure class="main_img">
+            <img src="../static/Monopic.png" alt="MonoMuse exhibition space">
+        </figure>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>

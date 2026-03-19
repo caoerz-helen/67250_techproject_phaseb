@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helen Zhang">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse Explore</title>
+
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        </header>
+
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+
+        <main class="main">
+            <h2>Explore MonoMuse</h2>
+
+            <div class="info_card">
+                <h3>Mission Statement</h3>
+                <p>
+                    MonoMuse is dedicated to exploring the evolving relationship between
+                    art, technology, and society.
+                </p>
+            </div>
+
+            <div class="info_card">
+                <h3>Milestones</h3>
+                <ul>
+                    <li>2023: Expansion of the museum space and launch of international artist collaborations.</li>
+                    <li>2018: Launch of the Interactive Media Lab, allowing visitors to experiment with creative coding.</li>
+                    <li>2015: MonoMuse opened as a contemporary museum centered on digital creativity and interdisciplinary art.</li>
+                </ul>
+            </div>
+        </main>
+
+        <figure class="main_img">
+            <img src="../static/Monopic.png" alt="Interior view of MonoMuse">
+        </figure>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>
