@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helen Zhang">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+
+    <link rel="stylesheet" href="./static/style.css">
+    <script src="./static/script.js" defer></script>
+
+    <script src="https://code.jquery.com/jquery-4.0.0-rc.1.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="./static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        </header>
+
+        <nav class="nav_bar" id="topNav">
+            <a class="nav_link" href="index.html">Home</a>
+            <a class="nav_link" href="views/explore.html">Explore</a>
+            <a class="nav_link" href="views/exhibitions.html">Exhibitions</a>
+            <a class="nav_link" href="views/tickets.html">Tickets</a>
+            <a class="nav_link" href="views/checkout.html">Checkout</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+        </nav>
+
+        <main class="main">
+            <h2 id="greeting">Welcome to MonoMuse</h2>
+
+            <p class="hero_text">
+                MonoMuse is a contemporary museum dedicated to exploring the
+                intersection of art, technology, and human creativity. Through immersive
+                exhibitions, interactive installations, and rotating collections,
+                MonoMuse invites visitors to discover how digital innovation is
+                transforming the way we create, experience, and understand art.
+            </p>
+
+            <a class="cta" href="views/tickets.html">Buy Tickets</a>
+
+            <section class="info_card">
+                <h3>Plan Your Visit</h3>
+
+                <p id="shortIntro">
+                    Discover immersive exhibitions, digital art, and interactive spaces designed to spark curiosity.
+                </p>
+
+                <p id="longIntro">
+                    At MonoMuse, visitors can explore contemporary works that combine design, code, media, and visual storytelling.
+                    Our exhibitions highlight how technology shapes culture and everyday life, while our programs encourage visitors
+                    to participate, experiment, and engage with art in new ways. From gallery installations to hands-on digital labs,
+                    MonoMuse is designed to feel welcoming, creative, and easy to navigate both in person and online.
+                </p>
+
+                <button id="readMore" type="button">Read More</button>
+                <button id="readLess" type="button">Read Less</button>
+            </section>
+        </main>
+
+        <figure class="main_img">
+            <img src="./static/Monopic.png" alt="Interior view of MonoMuse">
+        </figure>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>

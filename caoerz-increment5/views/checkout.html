@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helen Zhang">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse Checkout</title>
+
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        </header>
+
+        <nav class="nav_bar" id="topNav">
+            <a class="nav_link" href="../index.html">Home</a>
+            <a class="nav_link" href="explore.html">Explore</a>
+            <a class="nav_link" href="exhibitions.html">Exhibitions</a>
+            <a class="nav_link" href="tickets.html">Tickets</a>
+            <a class="nav_link" href="checkout.html">Checkout</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+        </nav>
+
+        <main class="main">
+            <h2>Checkout Support</h2>
+
+            <div class="info_card">
+                <h3>Address Lookup</h3>
+                <p>Enter your U.S. ZIP code to look up the city and state before checkout.</p>
+
+                <form id="zipLookupForm">
+                    <label for="zipCode">ZIP Code</label>
+                    <input type="text" id="zipCode" name="zipCode" maxlength="5" placeholder="e.g. 15213">
+
+                    <button type="button" onclick="lookupZip()">Look Up ZIP</button>
+
+                    <label for="cityResult">City</label>
+                    <input type="text" id="cityResult" name="cityResult" readonly>
+
+                    <label for="stateResult">State</label>
+                    <input type="text" id="stateResult" name="stateResult" readonly>
+                </form>
+
+                <p id="zipMessage"></p>
+            </div>
+
+            <div class="info_card">
+                <h3>Visit MonoMuse</h3>
+                <div id="map"></div>
+            </div>
+
+            <div class="info_card">
+                <h3>Finalize Purchase</h3>
+                <button type="button" onclick="submitPurchase()">Submit Order</button>
+            </div>
+        </main>
+
+        <figure class="main_img">
+            <img src="../static/Monopic.png" alt="MonoMuse checkout assistance">
+        </figure>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>
