@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Helen Zhang">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about MonoMuse, its mission, and ways to support the museum.">
+  <title>MonoMuse | Explore</title>
+
+  <link rel="stylesheet" href="../static/style.css">
+  <script src="../static/script.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip_link" href="#mainContent">Skip to main content</a>
+
+  <div class="container">
+    <header class="header">
+      <div class="logo_wrap">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse logo">
+      </div>
+
+      <button class="menu_button" id="menuButton" aria-label="Open navigation">☰</button>
+
+      <nav class="nav_bar" id="topNav" aria-label="Main navigation">
+        <a class="nav_link" href="../index.html">Home</a>
+        <a class="nav_link" href="explore.html">Explore</a>
+        <a class="nav_link" href="exhibitions.html">Exhibitions</a>
+        <a class="nav_link" href="tickets.html">Tickets</a>
+        <a class="nav_link" href="checkout.html">Checkout</a>
+      </nav>
+    </header>
+
+    <main id="mainContent">
+      <section class="card page_top">
+        <p class="eyebrow">Explore</p>
+        <h2>About MonoMuse</h2>
+        <p>
+          MonoMuse is a contemporary museum dedicated to exploring the relationship between
+          art, technology, and society.
+        </p>
+      </section>
+
+      <section class="two_col">
+        <article class="card">
+          <h2>Mission</h2>
+          <p>
+            MonoMuse presents engaging exhibitions and programs that make digital creativity,
+            experimentation, and design easier to understand and experience.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Membership & Donation</h2>
+          <p>
+            Visitors can support MonoMuse through membership and donations. These options help
+            sustain exhibitions, educational events, and future programming.
+          </p>
+        </article>
+      </section>
+
+      <section class="card">
+        <p class="eyebrow">Visitor FAQ</p>
+        <h2>Questions Visitors Might Have</h2>
+
+        <div class="faq_item">
+          <button class="faq_question" type="button">What can I see at MonoMuse?</button>
+          <div class="faq_answer">
+            <p>
+              Visitors can explore digital art, interactive installations, and contemporary exhibitions
+              focused on design, code, and media culture.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq_item">
+          <button class="faq_question" type="button">Can I buy tickets online?</button>
+          <div class="faq_answer">
+            <p>
+              Yes. The Tickets page includes a semi-functioning checkout experience with pricing,
+              validation, and a confirmation page.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq_item">
+          <button class="faq_question" type="button">How can I support the museum?</button>
+          <div class="faq_answer">
+            <p>
+              You can support MonoMuse by becoming a member, donating, and attending exhibitions and events.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <p class="eyebrow">Contact</p>
+        <h2>Get in Touch</h2>
+        <p>Email: <a href="mailto:visit@monomuse.org">visit@monomuse.org</a></p>
+        <p>Phone: <a href="tel:+14125550137">(412) 555-0137</a></p>
+        <p>Address: 5030 Forbes Ave, Pittsburgh, PA 15213</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h2 class="footer_title">MonoMuse</h2>
+        <p>Designed to make visitor planning clearer.</p>
+      </div>
+      <div>
+        <h2 class="footer_title">Explore More</h2>
+        <p><a href="exhibitions.html">Current Exhibitions</a></p>
+      </div>
+      <div>
+        <h2 class="footer_title">Support</h2>
+        <p>Membership and donation options available.</p>
+      </div>
+      <p id="copyYear" class="copyright"></p>
+    </footer>
+  </div>
+</body>
+</html>

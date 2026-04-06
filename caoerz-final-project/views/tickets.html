@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Helen Zhang">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Buy MonoMuse tickets online and plan your visit with clear pricing and checkout details.">
+  <title>MonoMuse | Tickets</title>
+
+  <link rel="stylesheet" href="../static/style.css">
+  <script src="../static/script.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip_link" href="#mainContent">Skip to main content</a>
+
+  <div class="container">
+    <header class="header">
+      <div class="logo_wrap">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse logo">
+      </div>
+
+      <button class="menu_button" id="menuButton" aria-label="Open navigation">☰</button>
+
+      <nav class="nav_bar" id="topNav" aria-label="Main navigation">
+        <a class="nav_link" href="../index.html">Home</a>
+        <a class="nav_link" href="explore.html">Explore</a>
+        <a class="nav_link" href="exhibitions.html">Exhibitions</a>
+        <a class="nav_link" href="tickets.html">Tickets</a>
+        <a class="nav_link" href="checkout.html">Checkout</a>
+      </nav>
+    </header>
+
+    <main id="mainContent">
+      <section class="card page_top">
+        <p class="eyebrow">Tickets</p>
+        <h2>Plan Your Visit</h2>
+        <p>
+          Quickly find hours, ticket pricing, and complete your order online.
+        </p>
+      </section>
+
+      <section class="two_col">
+        <article class="card">
+          <h2>Hours</h2>
+          <p>Tuesday–Sunday: 10:00 AM – 5:00 PM</p>
+          <p>Closed on Mondays</p>
+        </article>
+
+        <article class="card">
+          <h2>Location</h2>
+          <p>5030 Forbes Ave, Pittsburgh, PA 15213</p>
+        </article>
+      </section>
+
+      <section class="card">
+        <h2>Ticket Pricing</h2>
+        <table>
+          <tr>
+            <th>Ticket Type</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>General</td>
+            <td>Standard museum admission</td>
+            <td>$18</td>
+          </tr>
+          <tr>
+            <td>Student</td>
+            <td>Student visitor admission</td>
+            <td>$18</td>
+          </tr>
+          <tr>
+            <td>Member</td>
+            <td>MonoMuse member admission</td>
+            <td>$18</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="checkout_layout">
+        <section class="card">
+          <p class="eyebrow">Buy a Ticket</p>
+          <h2>Online Checkout</h2>
+
+          <form id="ticketForm" novalidate>
+            <label for="visitDate">Visit Date *</label>
+            <input type="date" id="visitDate" name="visitDate">
+            <p class="error" id="dateError"></p>
+
+            <label for="ticketType">Ticket Type *</label>
+            <select id="ticketType" name="ticketType">
+              <option value="">Select one</option>
+              <option value="General">General</option>
+              <option value="Student">Student</option>
+              <option value="Member">Member</option>
+            </select>
+            <p class="error" id="typeError"></p>
+
+            <label for="ticketQuantity">Ticket Quantity (1–10) *</label>
+            <input type="number" id="ticketQuantity" name="ticketQuantity" min="1" max="10">
+            <p class="error" id="quantityError"></p>
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+            <p class="error" id="emailError"></p>
+
+            <label for="zipCode">ZIP Code (optional)</label>
+            <div class="zip_row">
+              <input type="text" id="zipCode" name="zipCode" maxlength="5" placeholder="15213">
+              <button type="button" class="secondary_button small_button" id="zipButton">Look Up ZIP</button>
+            </div>
+            <p class="error" id="zipError"></p>
+            <p id="zipMessage" class="helper"></p>
+            <p id="zipResult" class="helper"></p>
+
+            <div class="checkbox_row">
+              <input type="checkbox" id="mailingList" name="mailingList">
+              <label for="mailingList">Join our mailing list</label>
+            </div>
+
+            <button type="submit" class="cta">Place Order</button>
+          </form>
+        </section>
+
+        <aside class="card summary_box">
+          <p class="eyebrow">Order Summary</p>
+          <h2>Total</h2>
+          <p>Ticket Type: <span id="summaryType">—</span></p>
+          <p>Quantity: <span id="summaryQuantity">0</span></p>
+          <p>Price Per Ticket: $18</p>
+          <p class="total_line">Total: <span id="summaryTotal">$0</span></p>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h2 class="footer_title">Tickets</h2>
+        <p>Simple online checkout for visitor planning.</p>
+      </div>
+      <div>
+        <h2 class="footer_title">Hours</h2>
+        <p>Tue–Sun, 10:00 AM – 5:00 PM</p>
+      </div>
+      <div>
+        <h2 class="footer_title">Directions</h2>
+        <p>Located near Carnegie Mellon University.</p>
+      </div>
+      <p id="copyYear" class="copyright"></p>
+    </footer>
+  </div>
+</body>
+</html>

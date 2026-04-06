@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Helen Zhang">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View current exhibitions, a slideshow gallery, and a featured museum video at MonoMuse.">
+  <title>MonoMuse | Exhibitions</title>
+
+  <link rel="stylesheet" href="../static/style.css">
+  <script src="../static/script.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip_link" href="#mainContent">Skip to main content</a>
+
+  <div class="container">
+    <header class="header">
+      <div class="logo_wrap">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse logo">
+      </div>
+
+      <button class="menu_button" id="menuButton" aria-label="Open navigation">☰</button>
+
+      <nav class="nav_bar" id="topNav" aria-label="Main navigation">
+        <a class="nav_link" href="../index.html">Home</a>
+        <a class="nav_link" href="explore.html">Explore</a>
+        <a class="nav_link" href="exhibitions.html">Exhibitions</a>
+        <a class="nav_link" href="tickets.html">Tickets</a>
+        <a class="nav_link" href="checkout.html">Checkout</a>
+      </nav>
+    </header>
+
+    <main id="mainContent">
+      <section class="card page_top">
+        <p class="eyebrow">Exhibitions</p>
+        <h2>Current Exhibitions</h2>
+        <p>
+          Explore current MonoMuse exhibitions and preview the museum experience before your visit.
+        </p>
+      </section>
+
+      <section class="two_col">
+        <article class="card">
+          <h2>Digital Dreams</h2>
+          <p>
+            This exhibition explores how artists use algorithms, artificial intelligence,
+            and digital systems to create new visual experiences.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Code &amp; Canvas</h2>
+          <p>
+            Code &amp; Canvas focuses on programming as a creative medium and highlights how
+            logic, motion, and experimentation can become art.
+          </p>
+        </article>
+      </section>
+
+      <section class="card">
+        <p class="eyebrow">Gallery Preview</p>
+        <h2>Slideshow</h2>
+
+        <div class="slideshow">
+          <button type="button" class="slide_button" id="prevSlide" aria-label="Previous slide">‹</button>
+
+          <figure class="slide_frame">
+            <img id="slideImage" src="" alt="MonoMuse exhibition slideshow image">
+            <figcaption id="slideCaption"></figcaption>
+          </figure>
+
+          <button type="button" class="slide_button" id="nextSlide" aria-label="Next slide">›</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <p class="eyebrow">Programs</p>
+        <h2>Sample Weekly Schedule</h2>
+        <table>
+          <tr>
+            <th>Day</th>
+            <th>Program</th>
+            <th>Time</th>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>Gallery Highlights Tour</td>
+            <td>11:00 AM</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>Interactive Media Demo</td>
+            <td>2:00 PM</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>Artist Talk</td>
+            <td>1:00 PM</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="card">
+        <p class="eyebrow">Featured Video</p>
+        <h2>Inside MonoMuse</h2>
+        <div class="video_wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/O2taqmQV-rA"
+            title="Featured museum video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h2 class="footer_title">Exhibitions</h2>
+        <p>Updated previews and weekly programming.</p>
+      </div>
+      <div>
+        <h2 class="footer_title">Tickets</h2>
+        <p><a href="tickets.html">Plan your visit</a></p>
+      </div>
+      <div>
+        <h2 class="footer_title">Hours</h2>
+        <p>Tue–Sun, 10:00 AM – 5:00 PM</p>
+      </div>
+      <p id="copyYear" class="copyright"></p>
+    </footer>
+  </div>
+</body>
+</html>
