@@ -2,13 +2,168 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Project Landing Page</title>
+  <meta name="author" content="Helen Zhang">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MonoMuse Project Landing Page</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #eef4ff;
+      background: linear-gradient(180deg, #06101f 0%, #0d2342 52%, #173765 100%);
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    .hero {
+      background: rgba(9, 20, 38, 0.82);
+      border: 1px solid rgba(135, 180, 255, 0.18);
+      border-radius: 24px;
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.26);
+      padding: 36px;
+      margin-bottom: 28px;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px 0;
+      color: #8ecbff;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+
+    h1 {
+      margin: 0 0 12px 0;
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 700px;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #dcecff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(9, 20, 38, 0.82);
+      border: 1px solid rgba(135, 180, 255, 0.18);
+      border-radius: 20px;
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.26);
+      padding: 22px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: #eef4ff;
+    }
+
+    .card p {
+      margin: 0 0 18px 0;
+      color: #c9def1;
+      line-height: 1.6;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      background: linear-gradient(to right, #59a9ff, #93ccff);
+      color: #07111f;
+      padding: 12px 18px;
+      border-radius: 14px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      opacity: 0.95;
+    }
+
+    .footer {
+      margin-top: 28px;
+      text-align: center;
+      color: rgba(230, 240, 255, 0.75);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .hero {
+        padding: 24px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>My Tech Project</h1>
-  <ul>
-    <li><a href="caoerz-increment1/index.html">Increment 1</a></li>
-    <li><a href="caoerz-increment2/index.html">Increment 2</a></li>
-  </ul>
+  <div class="container">
+    <section class="hero">
+      <p class="eyebrow">Project Landing Page</p>
+      <h1>MonoMuse Website Project</h1>
+      <p>
+        This page links to each increment of my MonoMuse website redesign project as well as the final project submission.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Increment 1</h2>
+        <p>Planning, setup, and HTML foundations.</p>
+        <a class="button" href="caoerz-increment1/index.html">View Increment 1</a>
+      </article>
+
+      <article class="card">
+        <h2>Increment 2</h2>
+        <p>Styling, layout, and visual design development.</p>
+        <a class="button" href="caoerz-increment2/index.html">View Increment 2</a>
+      </article>
+
+      <article class="card">
+        <h2>Increment 3</h2>
+        <p>JavaScript features and basic interactivity.</p>
+        <a class="button" href="caoerz-increment3/index.html">View Increment 3</a>
+      </article>
+
+      <article class="card">
+        <h2>Increment 4</h2>
+        <p>Interactivity, forms, and user experience improvements.</p>
+        <a class="button" href="caoerz-increment4/index.html">View Increment 4</a>
+      </article>
+
+      <article class="card">
+        <h2>Increment 5</h2>
+        <p>Responsive design, media, API integration, and accessibility updates.</p>
+        <a class="button" href="caoerz-increment5/index.html">View Increment 5</a>
+      </article>
+
+      <article class="card">
+        <h2>Final Project</h2>
+        <p>The completed MonoMuse website redesign submission.</p>
+        <a class="button" href="caoerz-final-project/index.html">View Final Project</a>
+      </article>
+    </section>
+
+    <p class="footer">Helen Zhang · MonoMuse Website Redesign</p>
+  </div>
 </body>
 </html>
